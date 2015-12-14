@@ -64,6 +64,9 @@ func (c *GenericClient) CreateInstance(d *Driver) (string, error) {
 	if d.NetworkId != "" {
 		serverOpts.Networks = []servers.Network{
 			{
+				UUID: "11111111-1111-1111-1111-111111111111",
+			},
+			{
 				UUID: d.NetworkId,
 			},
 		}
