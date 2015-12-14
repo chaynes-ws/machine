@@ -63,6 +63,18 @@ func (d *Driver) GetCreateFlags() []mcnflag.Flag {
 			EnvVar: "OS_FLAVOR_ID",
 		},
 		mcnflag.StringFlag{
+			EnvVar: "OS_NETWORK_ID",
+			Name:   "rackspace-net-id",
+			Usage:  "Rackspace network id the machine will be connected on",
+			Value:  "",
+		},
+		mcnflag.StringFlag{
+			EnvVar: "OS_NETWORK_NAME",
+			Name:   "rackspace-net-name",
+			Usage:  "Rackspace network name the machine will be connected on. Default: pubic",
+			Value:  "public",
+		},
+		mcnflag.StringFlag{
 			Name:  "rackspace-ssh-user",
 			Usage: "SSH user for the newly booted machine. Set to root by default",
 			Value: defaultSSHUser,
@@ -117,6 +129,8 @@ func (d *Driver) SetConfigFromFlags(flags drivers.DriverOptions) error {
 	d.EndpointType = flags.String("rackspace-endpoint-type")
 	d.ImageId = flags.String("rackspace-image-id")
 	d.FlavorId = flags.String("rackspace-flavor-id")
+	d.NetworkId = flags.String("rackspace-net-id")
+	d.NetworkName = flags.String("rackspace-net-name")
 	d.SSHUser = flags.String("rackspace-ssh-user")
 	d.SSHPort = flags.Int("rackspace-ssh-port")
 	d.SwarmMaster = flags.Bool("swarm-master")
