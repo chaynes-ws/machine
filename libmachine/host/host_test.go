@@ -3,7 +3,7 @@ package host
 import (
 	"testing"
 
-	_ "github.com/docker/machine/drivers/none"
+	_ "github.com/chaynes-ws/machine/drivers/none"
 )
 
 func TestValidateHostnameValid(t *testing.T) {

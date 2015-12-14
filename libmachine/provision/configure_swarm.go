@@ -5,9 +5,9 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/docker/machine/libmachine/auth"
-	"github.com/docker/machine/libmachine/log"
-	"github.com/docker/machine/libmachine/swarm"
+	"github.com/chaynes-ws/machine/libmachine/auth"
+	"github.com/chaynes-ws/machine/libmachine/log"
+	"github.com/chaynes-ws/machine/libmachine/swarm"
 	"github.com/samalba/dockerclient"
 )
 

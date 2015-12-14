@@ -3,13 +3,13 @@ package provision
 import (
 	"fmt"
 
-	"github.com/docker/machine/libmachine/auth"
-	"github.com/docker/machine/libmachine/drivers"
-	"github.com/docker/machine/libmachine/engine"
-	"github.com/docker/machine/libmachine/log"
-	"github.com/docker/machine/libmachine/provision/pkgaction"
-	"github.com/docker/machine/libmachine/provision/serviceaction"
-	"github.com/docker/machine/libmachine/swarm"
+	"github.com/chaynes-ws/machine/libmachine/auth"
+	"github.com/chaynes-ws/machine/libmachine/drivers"
+	"github.com/chaynes-ws/machine/libmachine/engine"
+	"github.com/chaynes-ws/machine/libmachine/log"
+	"github.com/chaynes-ws/machine/libmachine/provision/pkgaction"
+	"github.com/chaynes-ws/machine/libmachine/provision/serviceaction"
+	"github.com/chaynes-ws/machine/libmachine/swarm"
 )
 
 var provisioners = make(map[string]*RegisteredProvisioner)

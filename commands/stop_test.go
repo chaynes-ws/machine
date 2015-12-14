@@ -3,11 +3,11 @@ package commands
 import (
 	"testing"
 
-	"github.com/docker/machine/commands/commandstest"
-	"github.com/docker/machine/drivers/fakedriver"
-	"github.com/docker/machine/libmachine/host"
-	"github.com/docker/machine/libmachine/libmachinetest"
-	"github.com/docker/machine/libmachine/state"
+	"github.com/chaynes-ws/machine/commands/commandstest"
+	"github.com/chaynes-ws/machine/drivers/fakedriver"
+	"github.com/chaynes-ws/machine/libmachine/host"
+	"github.com/chaynes-ws/machine/libmachine/libmachinetest"
+	"github.com/chaynes-ws/machine/libmachine/state"
 	"github.com/stretchr/testify/assert"
 )
 

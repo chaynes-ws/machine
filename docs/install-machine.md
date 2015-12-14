@@ -20,7 +20,7 @@ installation</a> instructions.
 
 If you only want Docker Machine, you can install the Machine binaries (the
 latest versions of which are located at
-<https://github.com/docker/machine/releases/> ) directly by following the
+<https://github.com/chaynes-ws/machine/releases/> ) directly by following the
 instructions in the next section.
 
 ## Installing Machine Directly
@@ -33,21 +33,21 @@ instructions in the next section.
 
         Linux:
 
-            $ curl -L https://github.com/docker/machine/releases/download/v0.5.3/docker-machine_linux-amd64.zip >machine.zip && \
+            $ curl -L https://github.com/chaynes-ws/machine/releases/download/v0.5.3/docker-machine_linux-amd64.zip >machine.zip && \
             unzip machine.zip && \
             rm machine.zip && \
             mv docker-machine /usr/local/bin
 
         OSX:
 
-            $ curl -L https://github.com/docker/machine/releases/download/v0.5.3/docker-machine_darwin-amd64.zip >machine.zip && \
+            $ curl -L https://github.com/chaynes-ws/machine/releases/download/v0.5.3/docker-machine_darwin-amd64.zip >machine.zip && \
             unzip machine.zip && \
             rm machine.zip && \
             mv docker-machine /usr/local/bin
 
         Windows (using Git Bash):
 
-            $ curl -L https://github.com/docker/machine/releases/download/v0.5.3/docker-machine_windows-amd64.zip >machine.zip && \
+            $ curl -L https://github.com/chaynes-ws/machine/releases/download/v0.5.3/docker-machine_windows-amd64.zip >machine.zip && \
             unzip machine.zip && \
             rm machine.zip && \
             mv docker-machine /usr/local/bin
@@ -74,7 +74,7 @@ prompt, add `$(__docker-machine-ps1)` to your `PS1` setting in `~/.bashrc`.
     PS1='[\u@\h \W$(__docker-machine-ps1)]\$ '
 
 You can find additional documentation in the comments at the
-[top of each script](https://github.com/docker/machine/tree/master/contrib/completion/bash).
+[top of each script](https://github.com/chaynes-ws/machine/tree/master/contrib/completion/bash).
 
 ## Where to go next
 

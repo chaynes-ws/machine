@@ -1,8 +1,8 @@
 package provision
 
 import (
-	"github.com/docker/machine/libmachine/drivers"
-	"github.com/docker/machine/libmachine/ssh"
+	"github.com/chaynes-ws/machine/libmachine/drivers"
+	"github.com/chaynes-ws/machine/libmachine/ssh"
 )
 
 type RedHatSSHCommander struct {

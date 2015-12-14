@@ -91,7 +91,7 @@ export MACHINE_ROOT="$BASE_TEST_DIR/../.."
 export MACHINE_STORAGE_PATH="/tmp/machine-bats-test-$DRIVER"
 export MACHINE_BIN_NAME=docker-machine
 export BATS_LOG="$MACHINE_ROOT/bats.log"
-export B2D_LOCATION=~/.docker/machine/cache/boot2docker.iso
+export B2D_LOCATION=~/.chaynes-ws/machine/cache/boot2docker.iso
 export SHARED_NAME="bats-$DRIVER-test-shared-$(date +%s)"
 
 # This function gets used in the integration tests, so export it.

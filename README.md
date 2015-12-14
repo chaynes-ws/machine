@@ -10,11 +10,11 @@ It works a bit like this:
 
 ```console
 $ docker-machine create -d virtualbox dev
-Creating CA: /home/username/.docker/machine/certs/ca.pem
-Creating client certificate: /home/username/.docker/machine/certs/cert.pem
-Image cache does not exist, creating it at /home/username/.docker/machine/cache...
+Creating CA: /home/username/.chaynes-ws/machine/certs/ca.pem
+Creating client certificate: /home/username/.chaynes-ws/machine/certs/cert.pem
+Image cache does not exist, creating it at /home/username/.chaynes-ws/machine/cache...
 No default boot2docker iso found locally, downloading the latest release...
-Downloading https://github.com/boot2docker/boot2docker/releases/download/v1.6.2/boot2docker.iso to /home/username/.docker/machine/cache/boot2docker.iso...
+Downloading https://github.com/boot2docker/boot2docker/releases/download/v1.6.2/boot2docker.iso to /home/username/.chaynes-ws/machine/cache/boot2docker.iso...
 Creating VirtualBox VM...
 Creating SSH key...
 Starting VirtualBox VM...
@@ -52,7 +52,7 @@ Full documentation [is available here](https://docs.docker.com/machine/).
 
 ## Contributing
 
-Want to hack on Machine? Please start with the [Contributing Guide](https://github.com/docker/machine/blob/master/CONTRIBUTING.md).
+Want to hack on Machine? Please start with the [Contributing Guide](https://github.com/chaynes-ws/machine/blob/master/CONTRIBUTING.md).
 
 ## Driver Plugins
 
@@ -60,7 +60,7 @@ In addition to the core driver plugins bundled alongside Docker Machine, users
 can make and distribute their own plugin for any virtualization technology or
 cloud provider.  To browse the list of known Docker Machine plugins, please [see
 this document in our
-repo](https://github.com/docker/machine/blob/master/docs/AVAILABLE_DRIVER_PLUGINS.md).
+repo](https://github.com/chaynes-ws/machine/blob/master/docs/AVAILABLE_DRIVER_PLUGINS.md).
 
 ## Troubleshooting
 
@@ -85,7 +85,7 @@ networking.  Consider the following:
 
 -   Are you using a VPN?  If so, try disconnecting and see if creation will
     succeed without the VPN.  Some VPN software aggressively controls routes and
-    you may need to [manually add the route](https://github.com/docker/machine/issues/1500#issuecomment-121134958).
+    you may need to [manually add the route](https://github.com/chaynes-ws/machine/issues/1500#issuecomment-121134958).
 -   Are you connected to a proxy server, corporate or otherwise?  If so, take a
     look at the `--no-proxy` flag for `env` and at [setting environment variables
     for the created Docker Engine](https://docs.docker.com/machine/reference/create/#specifying-configuration-options-for-the-created-docker-engine).
@@ -102,17 +102,17 @@ workarounds, and desired workflows as you discover them.
 
 If you see messages such as "exit status 1" creating machines with VirtualBox,
 this frequently indicates that there is an issue with VirtualBox itself.  Please
-[file an issue](https://github.com/docker/machine/issues/new) and include a link
+[file an issue](https://github.com/chaynes-ws/machine/issues/new) and include a link
 to a [Github Gist](https://gist.github.com/) with the output of the VirtualBox
 log (usually located at
-`$HOME/.docker/machine/machines/machinename/machinename/Logs/VBox.log`), as well
+`$HOME/.chaynes-ws/machine/machines/machinename/machinename/Logs/VBox.log`), as well
 as the output of running the Docker Machine command which is failing with the
 global `--debug` flag enabled.  This will help us to track down which versions
 of VirtualBox are failing where, and under which conditions.
 
 If you see messages such as "exit status 255", this frequently indicates there
 has been an issue with SSH.  Please investigate your SSH configuration if you
-have one, and/or [file an issue](https://github.com/docker/machine/issues).
+have one, and/or [file an issue](https://github.com/chaynes-ws/machine/issues).
 
 #### "You may be getting rate limited by Github" error message
 

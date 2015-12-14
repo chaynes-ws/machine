@@ -9,16 +9,16 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/docker/machine/commands/mcndirs"
-	"github.com/docker/machine/libmachine/auth"
-	"github.com/docker/machine/libmachine/drivers"
-	"github.com/docker/machine/libmachine/engine"
-	"github.com/docker/machine/libmachine/log"
-	"github.com/docker/machine/libmachine/mcnutils"
-	"github.com/docker/machine/libmachine/provision/pkgaction"
-	"github.com/docker/machine/libmachine/provision/serviceaction"
-	"github.com/docker/machine/libmachine/state"
-	"github.com/docker/machine/libmachine/swarm"
+	"github.com/chaynes-ws/machine/commands/mcndirs"
+	"github.com/chaynes-ws/machine/libmachine/auth"
+	"github.com/chaynes-ws/machine/libmachine/drivers"
+	"github.com/chaynes-ws/machine/libmachine/engine"
+	"github.com/chaynes-ws/machine/libmachine/log"
+	"github.com/chaynes-ws/machine/libmachine/mcnutils"
+	"github.com/chaynes-ws/machine/libmachine/provision/pkgaction"
+	"github.com/chaynes-ws/machine/libmachine/provision/serviceaction"
+	"github.com/chaynes-ws/machine/libmachine/state"
+	"github.com/chaynes-ws/machine/libmachine/swarm"
 )
 
 func init() {

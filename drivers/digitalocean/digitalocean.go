@@ -8,11 +8,11 @@ import (
 	"time"
 
 	"github.com/digitalocean/godo"
-	"github.com/docker/machine/libmachine/drivers"
-	"github.com/docker/machine/libmachine/log"
-	"github.com/docker/machine/libmachine/mcnflag"
-	"github.com/docker/machine/libmachine/ssh"
-	"github.com/docker/machine/libmachine/state"
+	"github.com/chaynes-ws/machine/libmachine/drivers"
+	"github.com/chaynes-ws/machine/libmachine/log"
+	"github.com/chaynes-ws/machine/libmachine/mcnflag"
+	"github.com/chaynes-ws/machine/libmachine/ssh"
+	"github.com/chaynes-ws/machine/libmachine/state"
 	"golang.org/x/oauth2"
 )
 

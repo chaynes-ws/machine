@@ -3,8 +3,8 @@ package commands
 import (
 	"fmt"
 
-	"github.com/docker/machine/libmachine"
-	"github.com/docker/machine/libmachine/log"
+	"github.com/chaynes-ws/machine/libmachine"
+	"github.com/chaynes-ws/machine/libmachine/log"
 )
 
 func cmdRm(c CommandLine, api libmachine.API) error {

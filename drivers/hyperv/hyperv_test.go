@@ -3,7 +3,7 @@ package hyperv
 import (
 	"testing"
 
-	"github.com/docker/machine/libmachine/drivers"
+	"github.com/chaynes-ws/machine/libmachine/drivers"
 	"github.com/stretchr/testify/assert"
 )
 

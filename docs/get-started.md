@@ -33,11 +33,11 @@ This command will download a lightweight Linux distribution
 daemon installed, and will create and start a VirtualBox VM with Docker running.
 
     $ docker-machine create --driver virtualbox dev
-    Creating CA: /home/username/.docker/machine/certs/ca.pem
-    Creating client certificate: /home/username/.docker/machine/certs/cert.pem
-    Image cache does not exist, creating it at /home/username/.docker/machine/cache...
+    Creating CA: /home/username/.chaynes-ws/machine/certs/ca.pem
+    Creating client certificate: /home/username/.chaynes-ws/machine/certs/cert.pem
+    Image cache does not exist, creating it at /home/username/.chaynes-ws/machine/cache...
     No default boot2docker iso found locally, downloading the latest release...
-    Downloading https://github.com/boot2docker/boot2docker/releases/download/v1.6.2/boot2docker.iso to /home/username/.docker/machine/cache/boot2docker.iso...
+    Downloading https://github.com/boot2docker/boot2docker/releases/download/v1.6.2/boot2docker.iso to /home/username/.chaynes-ws/machine/cache/boot2docker.iso...
     Creating VirtualBox VM...
     Creating SSH key...
     Starting VirtualBox VM...
@@ -72,7 +72,7 @@ To see what will be set, run `docker-machine env dev`.
     $ docker-machine env dev
     export DOCKER_TLS_VERIFY="1"
     export DOCKER_HOST="tcp://172.16.62.130:2376"
-    export DOCKER_CERT_PATH="/Users/<your username>/.docker/machine/machines/dev"
+    export DOCKER_CERT_PATH="/Users/<your username>/.chaynes-ws/machine/machines/dev"
     export DOCKER_MACHINE_NAME="dev"
     # Run this command to configure your shell:
     # eval "$(docker-machine env dev)"
@@ -156,6 +156,6 @@ recurring issues with `docker-machine` and will only be transmitted in the case
 of a crash of `docker-machine`.
 
 If you wish to opt out of error reporting, you can create a `no-error-report`
-file in your `$HOME/.docker/machine` directory, and Docker Machine will disable
+file in your `$HOME/.chaynes-ws/machine` directory, and Docker Machine will disable
 this behavior.  Leaving the file empty is fine -- Docker Machine just checks for
 its presence.

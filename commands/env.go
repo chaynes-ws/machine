@@ -9,10 +9,10 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/docker/machine/commands/mcndirs"
-	"github.com/docker/machine/libmachine"
-	"github.com/docker/machine/libmachine/check"
-	"github.com/docker/machine/libmachine/log"
+	"github.com/chaynes-ws/machine/commands/mcndirs"
+	"github.com/chaynes-ws/machine/libmachine"
+	"github.com/chaynes-ws/machine/libmachine/check"
+	"github.com/chaynes-ws/machine/libmachine/log"
 )
 
 const (

@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/docker/machine/libmachine/log"
+	"github.com/chaynes-ws/machine/libmachine/log"
 	raw "google.golang.org/api/compute/v1"
 
 	"errors"

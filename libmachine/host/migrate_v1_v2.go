@@ -3,10 +3,10 @@ package host
 import (
 	"path/filepath"
 
-	"github.com/docker/machine/libmachine/auth"
-	"github.com/docker/machine/libmachine/drivers"
-	"github.com/docker/machine/libmachine/engine"
-	"github.com/docker/machine/libmachine/swarm"
+	"github.com/chaynes-ws/machine/libmachine/auth"
+	"github.com/chaynes-ws/machine/libmachine/drivers"
+	"github.com/chaynes-ws/machine/libmachine/engine"
+	"github.com/chaynes-ws/machine/libmachine/swarm"
 )
 
 type AuthOptionsV1 struct {

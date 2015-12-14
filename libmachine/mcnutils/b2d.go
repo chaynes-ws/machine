@@ -12,7 +12,7 @@ import (
 	"path/filepath"
 	"regexp"
 
-	"github.com/docker/machine/libmachine/log"
+	"github.com/chaynes-ws/machine/libmachine/log"
 )
 
 var (

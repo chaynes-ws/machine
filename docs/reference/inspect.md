@@ -64,7 +64,7 @@ If you want a subset of information formatted as JSON, you can use the `json`
 function in the template.
 
     $ docker-machine inspect --format='{{json .Driver}}' dev-fusion
-    {"Boot2DockerURL":"","CPUS":8,"CPUs":8,"CaCertPath":"/Users/hairyhenderson/.docker/machine/certs/ca.pem","DiskSize":20000,"IPAddress":"172.16.62.129","ISO":"/Users/hairyhenderson/.docker/machine/machines/dev-fusion/boot2docker-1.5.0-GH747.iso","MachineName":"dev-fusion","Memory":1024,"PrivateKeyPath":"/Users/hairyhenderson/.docker/machine/certs/ca-key.pem","SSHPort":22,"SSHUser":"docker","SwarmDiscovery":"","SwarmHost":"tcp://0.0.0.0:3376","SwarmMaster":false}
+    {"Boot2DockerURL":"","CPUS":8,"CPUs":8,"CaCertPath":"/Users/hairyhenderson/.chaynes-ws/machine/certs/ca.pem","DiskSize":20000,"IPAddress":"172.16.62.129","ISO":"/Users/hairyhenderson/.chaynes-ws/machine/machines/dev-fusion/boot2docker-1.5.0-GH747.iso","MachineName":"dev-fusion","Memory":1024,"PrivateKeyPath":"/Users/hairyhenderson/.chaynes-ws/machine/certs/ca-key.pem","SSHPort":22,"SSHUser":"docker","SwarmDiscovery":"","SwarmHost":"tcp://0.0.0.0:3376","SwarmMaster":false}
 
 While this is usable, it's not very human-readable. For this reason, there is
 `prettyjson`:
@@ -74,13 +74,13 @@ While this is usable, it's not very human-readable. For this reason, there is
         "Boot2DockerURL": "",
         "CPUS": 8,
         "CPUs": 8,
-        "CaCertPath": "/Users/hairyhenderson/.docker/machine/certs/ca.pem",
+        "CaCertPath": "/Users/hairyhenderson/.chaynes-ws/machine/certs/ca.pem",
         "DiskSize": 20000,
         "IPAddress": "172.16.62.129",
-        "ISO": "/Users/hairyhenderson/.docker/machine/machines/dev-fusion/boot2docker-1.5.0-GH747.iso",
+        "ISO": "/Users/hairyhenderson/.chaynes-ws/machine/machines/dev-fusion/boot2docker-1.5.0-GH747.iso",
         "MachineName": "dev-fusion",
         "Memory": 1024,
-        "PrivateKeyPath": "/Users/hairyhenderson/.docker/machine/certs/ca-key.pem",
+        "PrivateKeyPath": "/Users/hairyhenderson/.chaynes-ws/machine/certs/ca-key.pem",
         "SSHPort": 22,
         "SSHUser": "docker",
         "SwarmDiscovery": "",

@@ -14,9 +14,9 @@ import (
 	"errors"
 
 	"github.com/bugsnag/bugsnag-go"
-	"github.com/docker/machine/commands/mcndirs"
-	"github.com/docker/machine/libmachine/log"
-	"github.com/docker/machine/version"
+	"github.com/chaynes-ws/machine/commands/mcndirs"
+	"github.com/chaynes-ws/machine/libmachine/log"
+	"github.com/chaynes-ws/machine/version"
 )
 
 // We bundle a bugnsag key, but we disable its usage for now
@@ -58,7 +58,7 @@ func Send(err error, context string, driverName string, command string) error {
 		// XXX we need to abuse bugsnag metrics to get the OS/ARCH information as a usable filter
 		// Can do that with either "stage" or "hostname"
 		ReleaseStage:    fmt.Sprintf("%s (%s)", runtime.GOOS, runtime.GOARCH),
-		ProjectPackages: []string{"github.com/docker/machine/[^v]*"},
+		ProjectPackages: []string{"github.com/chaynes-ws/machine/[^v]*"},
 		AppVersion:      version.FullVersion(),
 		Synchronous:     true,
 		PanicHandler:    func() {},

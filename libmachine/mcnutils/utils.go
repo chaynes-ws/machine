@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/docker/machine/libmachine/log"
+	"github.com/chaynes-ws/machine/libmachine/log"
 )
 
 // GetHomeDir returns the home directory

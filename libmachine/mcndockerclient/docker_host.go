@@ -1,6 +1,6 @@
 package mcndockerclient
 
-import "github.com/docker/machine/libmachine/auth"
+import "github.com/chaynes-ws/machine/libmachine/auth"
 
 type URLer interface {
 	URL() (string, error)

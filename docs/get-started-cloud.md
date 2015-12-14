@@ -60,7 +60,7 @@ list of the flags/settings available and their defaults, see the output of
 When the creation of a host is initiated, a unique SSH key for accessing the
 host (initially for provisioning, then directly later if the user runs the
 `docker-machine ssh` command) will be created automatically and stored in the
-client's directory in `~/.docker/machines`. After the creation of the SSH key,
+client's directory in `~/.chaynes-ws/machines`. After the creation of the SSH key,
 Docker will be installed on the remote machine and the daemon will be configured
 to accept remote connections over TCP using TLS for authentication. Once this
 is finished, the host is ready for connection.
@@ -155,7 +155,7 @@ For example:
 
     $ docker-machine env --swarm swarm-master
     export DOCKER_TLS_VERIFY=1
-    export DOCKER_CERT_PATH="/home/ehazlett/.docker/machines/.client"
+    export DOCKER_CERT_PATH="/home/ehazlett/.chaynes-ws/machines/.client"
     export DOCKER_HOST=tcp://192.168.99.100:3376
 
 You can load this into your environment using

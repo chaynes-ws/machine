@@ -1,8 +1,8 @@
 # Contributing to machine
 
-[![GoDoc](https://godoc.org/github.com/docker/machine?status.png)](https://godoc.org/github.com/docker/machine)
-[![Build Status](https://travis-ci.org/docker/machine.svg?branch=master)](https://travis-ci.org/docker/machine)
-[![Coverage Status](https://coveralls.io/repos/docker/machine/badge.svg?branch=upstream-master&service=github)](https://coveralls.io/github/docker/machine?branch=upstream-master)
+[![GoDoc](https://godoc.org/github.com/chaynes-ws/machine?status.png)](https://godoc.org/github.com/chaynes-ws/machine)
+[![Build Status](https://travis-ci.org/chaynes-ws/machine.svg?branch=master)](https://travis-ci.org/chaynes-ws/machine)
+[![Coverage Status](https://coveralls.io/repos/chaynes-ws/machine/badge.svg?branch=upstream-master&service=github)](https://coveralls.io/github/chaynes-ws/machine?branch=upstream-master)
 
 Want to hack on Machine? Awesome! Here are instructions to get you
 started.
@@ -37,8 +37,8 @@ example of cloning and preparing the correct environment `GOPATH`:
         mkdir docker-machine
         cd docker-machine
         export GOPATH="$PWD"
-        go get github.com/docker/machine
-        cd src/github.com/docker/machine
+        go get github.com/chaynes-ws/machine
+        cd src/github.com/chaynes-ws/machine
 
 At this point, simply run:
 
@@ -256,7 +256,7 @@ to ensure we keep the driver in a consistent and stable state:
 -   Participate in a weekly driver maintainer meeting
 
 If you can commit to those, the next step is to make sure the driver adheres
-to the [spec](https://github.com/docker/machine/blob/master/docs/DRIVER_SPEC.md).
+to the [spec](https://github.com/chaynes-ws/machine/blob/master/docs/DRIVER_SPEC.md).
 
 Once you have created and tested the driver, you can open a PR.
 

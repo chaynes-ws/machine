@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/docker/machine/drivers/virtualbox"
-	"github.com/docker/machine/libmachine"
-	"github.com/docker/machine/libmachine/log"
+	"github.com/chaynes-ws/machine/drivers/virtualbox"
+	"github.com/chaynes-ws/machine/libmachine"
+	"github.com/chaynes-ws/machine/libmachine/log"
 )
 
 func main() {

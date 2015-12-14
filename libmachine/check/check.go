@@ -5,10 +5,10 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/docker/machine/libmachine/auth"
-	"github.com/docker/machine/libmachine/cert"
-	"github.com/docker/machine/libmachine/host"
-	"github.com/docker/machine/libmachine/state"
+	"github.com/chaynes-ws/machine/libmachine/auth"
+	"github.com/chaynes-ws/machine/libmachine/cert"
+	"github.com/chaynes-ws/machine/libmachine/host"
+	"github.com/chaynes-ws/machine/libmachine/state"
 )
 
 var (

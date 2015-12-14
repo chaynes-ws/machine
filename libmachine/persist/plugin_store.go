@@ -1,11 +1,11 @@
 package persist
 
 import (
-	"github.com/docker/machine/drivers/errdriver"
-	"github.com/docker/machine/libmachine/drivers"
-	"github.com/docker/machine/libmachine/drivers/plugin/localbinary"
-	"github.com/docker/machine/libmachine/drivers/rpc"
-	"github.com/docker/machine/libmachine/host"
+	"github.com/chaynes-ws/machine/drivers/errdriver"
+	"github.com/chaynes-ws/machine/libmachine/drivers"
+	"github.com/chaynes-ws/machine/libmachine/drivers/plugin/localbinary"
+	"github.com/chaynes-ws/machine/libmachine/drivers/rpc"
+	"github.com/chaynes-ws/machine/libmachine/host"
 )
 
 type PluginDriverFactory interface {

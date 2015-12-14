@@ -21,7 +21,7 @@ which reverse this effect.
     $ eval "$(docker-machine env dev)"
     $ env | grep DOCKER
     DOCKER_HOST=tcp://192.168.99.101:2376
-    DOCKER_CERT_PATH=/Users/nathanleclaire/.docker/machines/.client
+    DOCKER_CERT_PATH=/Users/nathanleclaire/.chaynes-ws/machines/.client
     DOCKER_TLS_VERIFY=1
     DOCKER_MACHINE_NAME=dev
     $ # If you run a docker command, now it will run against that host.
@@ -39,7 +39,7 @@ the path where `fish` is located, `docker-machine env name` will print out the
 values in the format which `fish` expects:
 
     set -x DOCKER_TLS_VERIFY 1;
-    set -x DOCKER_CERT_PATH "/Users/nathanleclaire/.docker/machine/machines/overlay";
+    set -x DOCKER_CERT_PATH "/Users/nathanleclaire/.chaynes-ws/machine/machines/overlay";
     set -x DOCKER_HOST tcp://192.168.99.102:2376;
     set -x DOCKER_MACHINE_NAME overlay
     # Run this command to configure your shell:
@@ -82,7 +82,7 @@ required for internet access.
     $ docker-machine env --no-proxy default
     export DOCKER_TLS_VERIFY="1"
     export DOCKER_HOST="tcp://192.168.99.104:2376"
-    export DOCKER_CERT_PATH="/Users/databus23/.docker/machine/certs"
+    export DOCKER_CERT_PATH="/Users/databus23/.chaynes-ws/machine/certs"
     export DOCKER_MACHINE_NAME="default"
     export NO_PROXY="192.168.99.104"
     # Run this command to configure your shell:

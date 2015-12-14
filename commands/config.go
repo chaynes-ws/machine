@@ -3,9 +3,9 @@ package commands
 import (
 	"fmt"
 
-	"github.com/docker/machine/libmachine"
-	"github.com/docker/machine/libmachine/check"
-	"github.com/docker/machine/libmachine/log"
+	"github.com/chaynes-ws/machine/libmachine"
+	"github.com/chaynes-ws/machine/libmachine/check"
+	"github.com/chaynes-ws/machine/libmachine/log"
 )
 
 func cmdConfig(c CommandLine, api libmachine.API) error {

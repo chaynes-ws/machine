@@ -8,15 +8,15 @@ import (
 	"strings"
 
 	"github.com/codegangsta/cli"
-	"github.com/docker/machine/commands/mcndirs"
-	"github.com/docker/machine/libmachine"
-	"github.com/docker/machine/libmachine/cert"
-	"github.com/docker/machine/libmachine/crashreport"
-	"github.com/docker/machine/libmachine/host"
-	"github.com/docker/machine/libmachine/log"
-	"github.com/docker/machine/libmachine/mcnutils"
-	"github.com/docker/machine/libmachine/persist"
-	"github.com/docker/machine/libmachine/ssh"
+	"github.com/chaynes-ws/machine/commands/mcndirs"
+	"github.com/chaynes-ws/machine/libmachine"
+	"github.com/chaynes-ws/machine/libmachine/cert"
+	"github.com/chaynes-ws/machine/libmachine/crashreport"
+	"github.com/chaynes-ws/machine/libmachine/host"
+	"github.com/chaynes-ws/machine/libmachine/log"
+	"github.com/chaynes-ws/machine/libmachine/mcnutils"
+	"github.com/chaynes-ws/machine/libmachine/persist"
+	"github.com/chaynes-ws/machine/libmachine/ssh"
 )
 
 var (

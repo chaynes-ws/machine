@@ -3,9 +3,9 @@ package drivers
 import (
 	"errors"
 
-	"github.com/docker/machine/libmachine/log"
-	"github.com/docker/machine/libmachine/mcnflag"
-	"github.com/docker/machine/libmachine/state"
+	"github.com/chaynes-ws/machine/libmachine/log"
+	"github.com/chaynes-ws/machine/libmachine/mcnflag"
+	"github.com/chaynes-ws/machine/libmachine/state"
 )
 
 // Driver defines how a host is created and controlled. Different types of

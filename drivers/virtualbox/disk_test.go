@@ -3,7 +3,7 @@ package virtualbox
 import (
 	"testing"
 
-	"github.com/docker/machine/drivers/vmwarevsphere/errors"
+	"github.com/chaynes-ws/machine/drivers/vmwarevsphere/errors"
 	"github.com/stretchr/testify/assert"
 )
 

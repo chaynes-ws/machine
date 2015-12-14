@@ -90,7 +90,7 @@ return an error on failure.
 # Testing
 
 Testing is strongly recommended for drivers.  Unit tests are preferred as well
-as inclusion into the [integration tests](https://github.com/docker/machine#integration-tests).
+as inclusion into the [integration tests](https://github.com/chaynes-ws/machine#integration-tests).
 
 # Maintaining
 
@@ -103,7 +103,7 @@ The following describes what is needed to create a Machine Driver.  The driver
 interface has methods that must be implemented for all drivers.  These include
 operations such as `Create`, `Remove`, `Start`, `Stop` etc.
 
-For details see the [Driver Interface](https://github.com/docker/machine/blob/master/drivers/drivers.go#L24).
+For details see the [Driver Interface](https://github.com/chaynes-ws/machine/blob/master/drivers/drivers.go#L24).
 
 To provide this functionality, you should embed the `drivers.BaseDriver` struct, similar to the following:
 
@@ -145,5 +145,5 @@ a `GetCreateFlags` func.  For example:
 
 ## Examples
 
-You can reference the existing [Drivers](https://github.com/docker/machine/tree/master/drivers)
+You can reference the existing [Drivers](https://github.com/chaynes-ws/machine/tree/master/drivers)
 as well.

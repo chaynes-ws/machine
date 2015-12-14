@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/docker/machine/drivers/fakedriver"
-	"github.com/docker/machine/libmachine/auth"
+	"github.com/chaynes-ws/machine/drivers/fakedriver"
+	"github.com/chaynes-ws/machine/libmachine/auth"
 )
 
 var (

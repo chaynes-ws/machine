@@ -3,8 +3,8 @@ package host
 import (
 	"testing"
 
-	"github.com/docker/machine/drivers/none"
-	"github.com/docker/machine/libmachine/auth"
+	"github.com/chaynes-ws/machine/drivers/none"
+	"github.com/chaynes-ws/machine/libmachine/auth"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -37,7 +37,7 @@ func TestMigrateHost(t *testing.T) {
         "Memory": 0,
         "Disk": 0,
         "AuthOptions": {
-            "StorePath": "/Users/nathanleclaire/.docker/machine/machines/default"
+            "StorePath": "/Users/nathanleclaire/.chaynes-ws/machine/machines/default"
         }
     },
     "Name": "default",
@@ -47,7 +47,7 @@ func TestMigrateHost(t *testing.T) {
 				ConfigVersion: 3,
 				HostOptions: &Options{
 					AuthOptions: &auth.Options{
-						StorePath: "/Users/nathanleclaire/.docker/machine/machines/default",
+						StorePath: "/Users/nathanleclaire/.chaynes-ws/machine/machines/default",
 					},
 				},
 				Name:       "default",
@@ -58,7 +58,7 @@ func TestMigrateHost(t *testing.T) {
 
 					// TODO (nathanleclaire): The "." argument here is a already existing
 					// bug (or at least likely to cause them in the future) and most
-					// likely should be "/Users/nathanleclaire/.docker/machine"
+					// likely should be "/Users/nathanleclaire/.chaynes-ws/machine"
 					//
 					// These default StorePath settings get over-written when we
 					// instantiate the plugin driver, but this seems entirely incidental.
@@ -82,7 +82,7 @@ func TestMigrateHost(t *testing.T) {
         "Memory": 0,
         "Disk": 0,
         "AuthOptions": {
-            "StorePath": "/Users/nathanleclaire/.docker/machine/machines/default"
+            "StorePath": "/Users/nathanleclaire/.chaynes-ws/machine/machines/default"
         }
     },
     "Name": "default"
@@ -105,7 +105,7 @@ func TestMigrateHost(t *testing.T) {
         "Memory": 0,
         "Disk": 0,
         "AuthOptions": {
-            "StorePath": "/Users/nathanleclaire/.docker/machine/machines/default"
+            "StorePath": "/Users/nathanleclaire/.chaynes-ws/machine/machines/default"
         }
     },
     "Name": "default"
@@ -114,7 +114,7 @@ func TestMigrateHost(t *testing.T) {
 				ConfigVersion: 3,
 				HostOptions: &Options{
 					AuthOptions: &auth.Options{
-						StorePath: "/Users/nathanleclaire/.docker/machine/machines/default",
+						StorePath: "/Users/nathanleclaire/.chaynes-ws/machine/machines/default",
 					},
 				},
 				Name:       "default",
@@ -144,25 +144,25 @@ func TestMigrateHost(t *testing.T) {
         "Memory": 0,
         "Disk": 0,
         "AuthOptions": {
-            "StorePath": "/Users/nathanleclaire/.docker/machine/machines/default"
+            "StorePath": "/Users/nathanleclaire/.chaynes-ws/machine/machines/default"
         }
     },
-    "StorePath": "/Users/nathanleclaire/.docker/machine/machines/default",
+    "StorePath": "/Users/nathanleclaire/.chaynes-ws/machine/machines/default",
     "Name": "default"
 }`),
 			expectedHostAfter: &Host{
 				ConfigVersion: 3,
 				HostOptions: &Options{
 					AuthOptions: &auth.Options{
-						StorePath: "/Users/nathanleclaire/.docker/machine/machines/default",
+						StorePath: "/Users/nathanleclaire/.chaynes-ws/machine/machines/default",
 					},
 				},
 				Name:       "default",
 				DriverName: "virtualbox",
-				RawDriver:  []byte(`{"MachineName":"default","StorePath":"/Users/nathanleclaire/.docker/machine"}`),
+				RawDriver:  []byte(`{"MachineName":"default","StorePath":"/Users/nathanleclaire/.chaynes-ws/machine"}`),
 				Driver: &RawDataDriver{
-					Data:   []byte(`{"MachineName":"default","StorePath":"/Users/nathanleclaire/.docker/machine"}`),
-					Driver: none.NewDriver("default", "/Users/nathanleclaire/.docker/machine"),
+					Data:   []byte(`{"MachineName":"default","StorePath":"/Users/nathanleclaire/.chaynes-ws/machine"}`),
+					Driver: none.NewDriver("default", "/Users/nathanleclaire/.chaynes-ws/machine"),
 				},
 			},
 			expectedMigrationPerformed: true,

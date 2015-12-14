@@ -5,11 +5,11 @@ import (
 
 	"bytes"
 
-	"github.com/docker/machine/commands/commandstest"
-	"github.com/docker/machine/drivers/vmwarevsphere/errors"
-	"github.com/docker/machine/libmachine/host"
-	"github.com/docker/machine/libmachine/libmachinetest"
-	"github.com/docker/machine/libmachine/mcndockerclient"
+	"github.com/chaynes-ws/machine/commands/commandstest"
+	"github.com/chaynes-ws/machine/drivers/vmwarevsphere/errors"
+	"github.com/chaynes-ws/machine/libmachine/host"
+	"github.com/chaynes-ws/machine/libmachine/libmachinetest"
+	"github.com/chaynes-ws/machine/libmachine/mcndockerclient"
 	"github.com/stretchr/testify/assert"
 )
 

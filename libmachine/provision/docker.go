@@ -3,8 +3,8 @@ package provision
 import (
 	"fmt"
 
-	"github.com/docker/machine/libmachine/auth"
-	"github.com/docker/machine/libmachine/mcndockerclient"
+	"github.com/chaynes-ws/machine/libmachine/auth"
+	"github.com/chaynes-ws/machine/libmachine/mcndockerclient"
 	"github.com/samalba/dockerclient"
 )
 

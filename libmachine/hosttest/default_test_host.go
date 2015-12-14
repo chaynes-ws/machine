@@ -1,12 +1,12 @@
 package hosttest
 
 import (
-	"github.com/docker/machine/drivers/none"
-	"github.com/docker/machine/libmachine/auth"
-	"github.com/docker/machine/libmachine/engine"
-	"github.com/docker/machine/libmachine/host"
-	"github.com/docker/machine/libmachine/swarm"
-	"github.com/docker/machine/libmachine/version"
+	"github.com/chaynes-ws/machine/drivers/none"
+	"github.com/chaynes-ws/machine/libmachine/auth"
+	"github.com/chaynes-ws/machine/libmachine/engine"
+	"github.com/chaynes-ws/machine/libmachine/host"
+	"github.com/chaynes-ws/machine/libmachine/swarm"
+	"github.com/chaynes-ws/machine/libmachine/version"
 )
 
 const (
