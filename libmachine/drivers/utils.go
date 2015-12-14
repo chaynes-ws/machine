@@ -23,6 +23,7 @@ func GetSSHClientFromDriver(d Driver) (ssh.Client, error) {
 		Keys: []string{d.GetSSHKeyPath()},
 	}
 
+	log.Debugf("SSH command: ssh", address, port, auth);
 	client, err := ssh.NewClient(d.GetSSHUsername(), address, port, auth)
 	return client, err
 
