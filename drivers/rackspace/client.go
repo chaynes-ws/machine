@@ -69,12 +69,13 @@ func (c *Client) GetInstanceIPAddresses(d *openstack.Driver) ([]openstack.IPAddr
 	if err != nil {
 		return nil, err
 	}
-	log.Debug(server);
+	log.Debug(server.Addresses["RC-CLOUD-WS"]);
+	log.Debug(server.Addresses["RC-CLOUD-WS"].([]interface{})[0].(string));
 
 	return []openstack.IPAddress{
 		{
 			Network:     "RC-CLOUD-WS",
-			Address:     server.Addresses["RC-CLOUD-WS"].(map[string]interface{})["addr"].(string),
+			Address:     server.Addresses["RC-CLOUD-WS"].([]interface{})[0].(string),
 			AddressType: openstack.Fixed,
 		},
 	}, nil
